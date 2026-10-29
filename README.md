@@ -2,7 +2,7 @@
 
 Um estudo meu sobre como fazer um login seguro e confiável. Montei um site simples de cadastro e login, com uma página de "segredos" que só aparece para quem está logado, e fui trocando a forma de guardar e conferir a senha, do jeito mais ingênuo até o uso de sessões.
 
-As telas vieram do projeto inicial do curso [The Complete Web Development Bootcamp](https://www.udemy.com/course/the-complete-web-development-bootcamp/), da Angela Yu. A parte de segurança eu fui construindo em etapas, e cada etapa é um commit.
+As telas vieram do projeto inicial do curso The Complete Web Development Bootcamp, da Angela Yu. A parte de segurança eu fui construindo em etapas, e cada etapa é um commit.
 
 ## As etapas
 
