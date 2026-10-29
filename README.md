@@ -7,7 +7,7 @@ As telas vieram do projeto inicial do curso [The Complete Web Development Bootca
 ## As etapas
 
 1. **Criptografia da senha.** A senha é criptografada no banco com `mongoose-encryption`, usando uma chave no `.env`. É melhor que texto puro, mas quem conseguir a chave consegue ler todas as senhas.
-2. **Hash com MD5.** A senha deixa de ser guardada em texto puro e passa a ser um hash. Funciona, mas o MD5 é rápido demais: dá para testar bilhões de senhas por segundo, e senhas iguais geram o mesmo hash.
+2. **Hash com MD5.** A senha deixa de ser criptografada e passa a ser um hash, que não tem volta: nem com a chave dá para recuperar a senha. Funciona, mas o MD5 é rápido demais: dá para testar bilhões de senhas por segundo, e senhas iguais geram o mesmo hash.
 3. **bcrypt com salt.** Cada senha ganha um salt aleatório e passa por várias rodadas de hash. Senhas iguais viram hashes diferentes, e testar senha por senha fica lento de propósito.
 4. **Sessões e cookies com Passport.** Depois do login, o usuário continua autenticado pela sessão (cookie), e a página de segredos confere isso antes de abrir. O `passport-local-mongoose` cuida do hash e do salt.
 
